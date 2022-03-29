@@ -2,6 +2,7 @@ import random
 
 
 def shuffle_cut(data, output_count=3):
+    """Randomises a list of data, then outputs the amount of values set in output_count"""
     output = []
     random.shuffle(data)
     i = 0

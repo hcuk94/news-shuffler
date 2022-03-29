@@ -2,6 +2,11 @@
 
 # News Sources
 sources = {
+    'bbc': {
+        'enabled': True,
+        'name': 'BBC News',
+        'url': 'http://feeds.bbci.co.uk/news/uk/rss.xml'
+    },
     'dailymail': {
         'enabled': True,
         'name': 'Daily Mail',
@@ -11,6 +16,11 @@ sources = {
         'enabled': True,
         'name': 'The Guardian',
         'url': 'https://www.theguardian.com/uk/rss'
+    },
+    'telegraph': {
+        'enabled': True,
+        'name': 'The Telegraph',
+        'url': 'https://www.telegraph.co.uk/rss.xml'
     }
 }
 
