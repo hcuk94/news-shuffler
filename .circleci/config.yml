@@ -7,6 +7,11 @@ jobs:
     steps:
       - checkout
       - run:
+          name: List Files
+          command: |
+            cd /home/circleci/project
+            ls -lh
+      - run:
           name: Package Requirements
           command: |
             pip install --target ./package -r requirements.txt
