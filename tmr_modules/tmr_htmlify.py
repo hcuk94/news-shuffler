@@ -4,6 +4,9 @@ def htmlify(data):
     """Converts RSS data into readable HTML"""
     html_list = []
     for item in data:
+        # Handle feeds that use 'updated' instead of 'published'
+        if "published" not in item:
+            item['published'] = item['updated']
         item_html = f"""
             <div style="min-height: 175px;">
             <h1 style="font-size:20px;">
