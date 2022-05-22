@@ -11,7 +11,7 @@ def htmlify(data):
             </h1>
             <i>{item['source']} | {item['published']}</i>
             <div style="float:left; margin-right: 5px;">
-            <img src="{item['media_content'][0]['url']}" style="width: 140px; height: 85px;"/>
+            <img src="{item['media_content'][0]['url']}" width="140" height="85"/>
             </div>
             <div>
             <p style="text-align: justify;">
