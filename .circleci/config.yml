@@ -49,6 +49,7 @@ jobs:
       - run:
           name: Terraform Init
           command: |
+            cd infrastructure
             terraform init
       - run:
           name: Terraform Apply
